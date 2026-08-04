@@ -7,26 +7,26 @@ module custdiveg(
 );
 
 // Test circut IO wires
-wire [15:0] A, B;
-wire [15:0] O;
+wire [31:0] A, B;
+wire [31:0] O;
 reg R0, R0_1;
 
 // Assign to FPGA IO
-assign A = IN[15:0];
-assign B = IN[32+15:32];
+assign A = IN[31:0];
+assign B = IN[63:32];
 
 always @(*) begin
     OUT[0] = R0_1;
     OUT[1] = R0;
-    OUT[127:112] = O;
+    OUT[127:96] = O;
 end
     
 // Logic
 custdiv #(
     .MODE_CUSTDIV(1)
 ) cdiv (
-    .I0   (A[15:0]  ), //i
-    .I1   (B[15:0]  ), //i
+    .I0   (A[31:0]  ), //i
+    .I1   (B[31:0]  ), //i
     .Q    (O        ), //o
     .C    (clk      ) //i
 );

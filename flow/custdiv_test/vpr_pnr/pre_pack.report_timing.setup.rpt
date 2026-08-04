@@ -1,256 +1,8 @@
-#Timing report of worst 20 path(s)
+#Timing report of worst 36 path(s)
 # Unit scale: 1e-09 seconds
 # Output precision: 3
 
 #Path 1
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[112].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[0] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[112].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 2
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[127].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[15] (custdiv)                                             0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[127].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 3
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[126].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[14] (custdiv)                                             0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[126].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 4
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[125].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[13] (custdiv)                                             0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[125].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 5
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[124].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[12] (custdiv)                                             0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[124].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 6
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[123].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[11] (custdiv)                                             0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[123].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 7
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[122].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[10] (custdiv)                                             0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[122].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 8
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[121].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[9] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[121].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 9
 Startpoint: IN[0].inpad[0] (.input clocked by clk)
 Endpoint  : out:OUT[120].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -264,7 +16,7 @@ IN[0].inpad[0] (.input)                                          0.000     0.200
 | (inter-cluster net delay estimate)                             4.405     4.605
 cdiv.I0[0] (custdiv)                                             0.000     4.605
 | (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[8] (custdiv)                                              0.000     6.105
+cdiv.Q[24] (custdiv)                                             0.000     6.105
 | (inter-cluster net delay estimate)                             4.405    10.511
 out:OUT[120].outpad[0] (.output)                                 0.000    10.511
 data arrival time                                                         10.511
@@ -281,9 +33,9 @@ data arrival time                                                        -10.511
 slack (VIOLATED)                                                         -10.211
 
 
-#Path 10
+#Path 2
 Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[119].outpad[0] (.output clocked by clk)
+Endpoint  : out:OUT[112].outpad[0] (.output clocked by clk)
 Path Type : setup
 
 Point                                                             Incr      Path
@@ -295,9 +47,9 @@ IN[0].inpad[0] (.input)                                          0.000     0.200
 | (inter-cluster net delay estimate)                             4.405     4.605
 cdiv.I0[0] (custdiv)                                             0.000     4.605
 | (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[7] (custdiv)                                              0.000     6.105
+cdiv.Q[16] (custdiv)                                             0.000     6.105
 | (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[119].outpad[0] (.output)                                 0.000    10.511
+out:OUT[112].outpad[0] (.output)                                 0.000    10.511
 data arrival time                                                         10.511
 
 clock clk (rise edge)                                            0.500     0.500
@@ -312,162 +64,7 @@ data arrival time                                                        -10.511
 slack (VIOLATED)                                                         -10.211
 
 
-#Path 11
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[118].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[6] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[118].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 12
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[117].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[5] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[117].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 13
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[116].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[4] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[116].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 14
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[115].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[3] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[115].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 15
-Startpoint: IN[0].inpad[0] (.input clocked by clk)
-Endpoint  : out:OUT[114].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-input external delay                                             0.200     0.200
-IN[0].inpad[0] (.input)                                          0.000     0.200
-| (inter-cluster net delay estimate)                             4.405     4.605
-cdiv.I0[0] (custdiv)                                             0.000     4.605
-| (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[2] (custdiv)                                              0.000     6.105
-| (inter-cluster net delay estimate)                             4.405    10.511
-out:OUT[114].outpad[0] (.output)                                 0.000    10.511
-data arrival time                                                         10.511
-
-clock clk (rise edge)                                            0.500     0.500
-clock source latency                                             0.000     0.500
-clock uncertainty                                                0.000     0.500
-output external delay                                           -0.200     0.300
-data required time                                                         0.300
---------------------------------------------------------------------------------
-data required time                                                         0.300
-data arrival time                                                        -10.511
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                         -10.211
-
-
-#Path 16
+#Path 3
 Startpoint: IN[0].inpad[0] (.input clocked by clk)
 Endpoint  : out:OUT[113].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -481,7 +78,7 @@ IN[0].inpad[0] (.input)                                          0.000     0.200
 | (inter-cluster net delay estimate)                             4.405     4.605
 cdiv.I0[0] (custdiv)                                             0.000     4.605
 | (primitive 'custdiv' combinational delay)                      1.500     6.105
-cdiv.Q[1] (custdiv)                                              0.000     6.105
+cdiv.Q[17] (custdiv)                                             0.000     6.105
 | (inter-cluster net delay estimate)                             4.405    10.511
 out:OUT[113].outpad[0] (.output)                                 0.000    10.511
 data arrival time                                                         10.511
@@ -498,7 +95,906 @@ data arrival time                                                        -10.511
 slack (VIOLATED)                                                         -10.211
 
 
+#Path 4
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[114].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[18] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[114].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 5
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[115].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[19] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[115].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 6
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[116].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[20] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[116].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 7
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[117].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[21] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[117].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 8
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[118].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[22] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[118].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 9
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[119].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[23] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[119].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 10
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[96].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[0] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[96].outpad[0] (.output)                                  0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 11
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[121].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[25] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[121].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 12
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[122].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[26] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[122].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 13
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[123].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[27] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[123].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 14
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[124].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[28] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[124].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 15
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[125].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[29] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[125].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 16
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[126].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[30] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[126].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
 #Path 17
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[127].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[31] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[127].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 18
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[110].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[14] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[110].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 19
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[97].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[1] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[97].outpad[0] (.output)                                  0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 20
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[98].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[2] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[98].outpad[0] (.output)                                  0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 21
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[99].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[3] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[99].outpad[0] (.output)                                  0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 22
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[100].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[4] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[100].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 23
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[101].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[5] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[101].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 24
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[102].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[6] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[102].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 25
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[103].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[7] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[103].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 26
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[104].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[8] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[104].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 27
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[105].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[9] (custdiv)                                              0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[105].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 28
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[106].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[10] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[106].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 29
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[107].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[11] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[107].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 30
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[108].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[12] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[108].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 31
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[109].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[13] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[109].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 32
+Startpoint: IN[0].inpad[0] (.input clocked by clk)
+Endpoint  : out:OUT[111].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.200     0.200
+IN[0].inpad[0] (.input)                                          0.000     0.200
+| (inter-cluster net delay estimate)                             4.405     4.605
+cdiv.I0[0] (custdiv)                                             0.000     4.605
+| (primitive 'custdiv' combinational delay)                      1.500     6.105
+cdiv.Q[15] (custdiv)                                             0.000     6.105
+| (inter-cluster net delay estimate)                             4.405    10.511
+out:OUT[111].outpad[0] (.output)                                 0.000    10.511
+data arrival time                                                         10.511
+
+clock clk (rise edge)                                            0.500     0.500
+clock source latency                                             0.000     0.500
+clock uncertainty                                                0.000     0.500
+output external delay                                           -0.200     0.300
+data required time                                                         0.300
+--------------------------------------------------------------------------------
+data required time                                                         0.300
+data arrival time                                                        -10.511
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                         -10.211
+
+
+#Path 33
 Startpoint: R0.Q[0] (.latch clocked by clk)
 Endpoint  : out:OUT[1].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -528,7 +1024,7 @@ data arrival time                                                         -8.891
 slack (VIOLATED)                                                          -8.591
 
 
-#Path 18
+#Path 34
 Startpoint: R0_1.Q[0] (.latch clocked by clk)
 Endpoint  : out:OUT[0].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -558,7 +1054,7 @@ data arrival time                                                         -8.891
 slack (VIOLATED)                                                          -8.591
 
 
-#Path 19
+#Path 35
 Startpoint: R0_1.Q[0] (.latch clocked by clk)
 Endpoint  : R0.D[0] (.latch clocked by clk)
 Path Type : setup
@@ -591,7 +1087,7 @@ data arrival time                                                         -8.891
 slack (VIOLATED)                                                          -4.045
 
 
-#Path 20
+#Path 36
 Startpoint: IN[0].inpad[0] (.input clocked by clk)
 Endpoint  : R0_1.D[0] (.latch clocked by clk)
 Path Type : setup

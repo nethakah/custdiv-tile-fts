@@ -13,7 +13,7 @@ module custdiveg(IN, OUT, clk);
   input clk;
   wire clk;
   (* src = "/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:11.13-11.14" *)
-  wire [15:0] O;
+  wire [31:0] O;
   (* src = "/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:12.5-12.7" *)
   reg R0;
   (* src = "/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:12.9-12.13" *)
@@ -30,9 +30,9 @@ module custdiveg(IN, OUT, clk);
     .MODE_CUSTDIV(32'sd1)
   ) cdiv (
     .C(clk),
-    .I0(IN[15:0]),
-    .I1(IN[47:32]),
+    .I0(IN[31:0]),
+    .I1(IN[63:32]),
     .Q(O)
   );
-  assign OUT = { O, 110'hxxxxxxxxxxxxxxxxxxxxxxxxxxxx, R0, R0_1 };
+  assign OUT = { O, 94'hxxxxxxxxxxxxxxxxxxxxxxxx, R0, R0_1 };
 endmodule

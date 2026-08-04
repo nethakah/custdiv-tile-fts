@@ -3,6 +3,54 @@
 <partition name="cdiv"><add_atom name_pattern="cdiv"/>
 <add_region x_high="3" x_low="3" y_high="4" y_low="4"/>
 </partition>
+<partition name="out:OUT[96]"><add_atom name_pattern="out:OUT[96]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[97]"><add_atom name_pattern="out:OUT[97]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[98]"><add_atom name_pattern="out:OUT[98]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[99]"><add_atom name_pattern="out:OUT[99]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[100]"><add_atom name_pattern="out:OUT[100]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[101]"><add_atom name_pattern="out:OUT[101]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[102]"><add_atom name_pattern="out:OUT[102]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[103]"><add_atom name_pattern="out:OUT[103]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[104]"><add_atom name_pattern="out:OUT[104]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[105]"><add_atom name_pattern="out:OUT[105]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[106]"><add_atom name_pattern="out:OUT[106]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[107]"><add_atom name_pattern="out:OUT[107]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[108]"><add_atom name_pattern="out:OUT[108]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[109]"><add_atom name_pattern="out:OUT[109]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[110]"><add_atom name_pattern="out:OUT[110]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
+<partition name="out:OUT[111]"><add_atom name_pattern="out:OUT[111]"/>
+<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
+</partition>
 <partition name="out:OUT[112]"><add_atom name_pattern="out:OUT[112]"/>
 <add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
 </partition>
@@ -62,7 +110,7 @@
 <add_region x_high="3" x_low="3" y_high="1" y_low="1"/>
 </partition>
 <partition name="$undef"><add_atom name_pattern="$undef"/>
-<add_region x_high="3" x_low="3" y_high="2" y_low="2"/>
+<add_region x_high="3" x_low="3" y_high="3" y_low="3"/>
 </partition>
 <partition name="out:OUT[2]"><add_atom name_pattern="out:OUT[2]"/>
 <add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
@@ -346,54 +394,6 @@
 <partition name="out:OUT[95]"><add_atom name_pattern="out:OUT[95]"/>
 <add_region x_high="4" x_low="4" y_high="3" y_low="3"/>
 </partition>
-<partition name="out:OUT[96]"><add_atom name_pattern="out:OUT[96]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[97]"><add_atom name_pattern="out:OUT[97]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[98]"><add_atom name_pattern="out:OUT[98]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[99]"><add_atom name_pattern="out:OUT[99]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[100]"><add_atom name_pattern="out:OUT[100]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[101]"><add_atom name_pattern="out:OUT[101]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[102]"><add_atom name_pattern="out:OUT[102]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[103]"><add_atom name_pattern="out:OUT[103]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[104]"><add_atom name_pattern="out:OUT[104]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[105]"><add_atom name_pattern="out:OUT[105]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[106]"><add_atom name_pattern="out:OUT[106]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[107]"><add_atom name_pattern="out:OUT[107]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[108]"><add_atom name_pattern="out:OUT[108]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[109]"><add_atom name_pattern="out:OUT[109]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[110]"><add_atom name_pattern="out:OUT[110]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
-<partition name="out:OUT[111]"><add_atom name_pattern="out:OUT[111]"/>
-<add_region x_high="4" x_low="4" y_high="4" y_low="4"/>
-</partition>
 <partition name="IN[0]"><add_atom name_pattern="IN[0]"/>
 <add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
 </partition>
@@ -440,6 +440,54 @@
 <add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
 </partition>
 <partition name="IN[15]"><add_atom name_pattern="IN[15]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[16]"><add_atom name_pattern="IN[16]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[17]"><add_atom name_pattern="IN[17]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[18]"><add_atom name_pattern="IN[18]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[19]"><add_atom name_pattern="IN[19]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[20]"><add_atom name_pattern="IN[20]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[21]"><add_atom name_pattern="IN[21]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[22]"><add_atom name_pattern="IN[22]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[23]"><add_atom name_pattern="IN[23]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[24]"><add_atom name_pattern="IN[24]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[25]"><add_atom name_pattern="IN[25]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[26]"><add_atom name_pattern="IN[26]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[27]"><add_atom name_pattern="IN[27]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[28]"><add_atom name_pattern="IN[28]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[29]"><add_atom name_pattern="IN[29]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[30]"><add_atom name_pattern="IN[30]"/>
+<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+</partition>
+<partition name="IN[31]"><add_atom name_pattern="IN[31]"/>
 <add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
 </partition>
 <partition name="IN[32]"><add_atom name_pattern="IN[32]"/>
@@ -490,8 +538,56 @@
 <partition name="IN[47]"><add_atom name_pattern="IN[47]"/>
 <add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
 </partition>
+<partition name="IN[48]"><add_atom name_pattern="IN[48]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[49]"><add_atom name_pattern="IN[49]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[50]"><add_atom name_pattern="IN[50]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[51]"><add_atom name_pattern="IN[51]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[52]"><add_atom name_pattern="IN[52]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[53]"><add_atom name_pattern="IN[53]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[54]"><add_atom name_pattern="IN[54]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[55]"><add_atom name_pattern="IN[55]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[56]"><add_atom name_pattern="IN[56]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[57]"><add_atom name_pattern="IN[57]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[58]"><add_atom name_pattern="IN[58]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[59]"><add_atom name_pattern="IN[59]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[60]"><add_atom name_pattern="IN[60]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[61]"><add_atom name_pattern="IN[61]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[62]"><add_atom name_pattern="IN[62]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
+<partition name="IN[63]"><add_atom name_pattern="IN[63]"/>
+<add_region x_high="4" x_low="4" y_high="2" y_low="2"/>
+</partition>
 <partition name="clk"><add_atom name_pattern="clk"/>
-<add_region x_high="4" x_low="4" y_high="1" y_low="1"/>
+<add_region x_high="4" x_low="4" y_high="3" y_low="3"/>
 </partition>
 </partition_list>
 </vpr_constraints>

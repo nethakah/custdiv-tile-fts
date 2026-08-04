@@ -37,9 +37,9 @@ Removed 0 unused modules.
         +----------Local Count, excluding submodules.
         | 
        12 wires
-      327 wire bits
+      391 wire bits
         8 public wires
-      307 public wire bits
+      355 public wire bits
         3 ports
       257 port bits
         2 processes
@@ -71,7 +71,7 @@ Creating decoders for process `\custdiveg.$proc$/scratch/nhaldo/hft-efpga-ops/fl
 
 5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 No latch inferred for signal `\custdiveg.\OUT [1:0]' from process `\custdiveg.$proc$/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:18$1'.
-No latch inferred for signal `\custdiveg.\OUT [127:112]' from process `\custdiveg.$proc$/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:18$1'.
+No latch inferred for signal `\custdiveg.\OUT [127:96]' from process `\custdiveg.$proc$/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:18$1'.
 
 5.9. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\custdiveg.\R0' using process `\custdiveg.$proc$/scratch/nhaldo/hft-efpga-ops/flow/custdiv_test/inputs/custdiv.v:34$2'.
@@ -101,22 +101,6 @@ Removed 0 unused cells and 4 unused wires.
 
 9. Executing CHECK pass (checking for obvious problems).
 Checking module custdiveg...
-Warning: Wire custdiveg.\OUT [111] is used but has no driver.
-Warning: Wire custdiveg.\OUT [110] is used but has no driver.
-Warning: Wire custdiveg.\OUT [109] is used but has no driver.
-Warning: Wire custdiveg.\OUT [108] is used but has no driver.
-Warning: Wire custdiveg.\OUT [107] is used but has no driver.
-Warning: Wire custdiveg.\OUT [106] is used but has no driver.
-Warning: Wire custdiveg.\OUT [105] is used but has no driver.
-Warning: Wire custdiveg.\OUT [104] is used but has no driver.
-Warning: Wire custdiveg.\OUT [103] is used but has no driver.
-Warning: Wire custdiveg.\OUT [102] is used but has no driver.
-Warning: Wire custdiveg.\OUT [101] is used but has no driver.
-Warning: Wire custdiveg.\OUT [100] is used but has no driver.
-Warning: Wire custdiveg.\OUT [99] is used but has no driver.
-Warning: Wire custdiveg.\OUT [98] is used but has no driver.
-Warning: Wire custdiveg.\OUT [97] is used but has no driver.
-Warning: Wire custdiveg.\OUT [96] is used but has no driver.
 Warning: Wire custdiveg.\OUT [95] is used but has no driver.
 Warning: Wire custdiveg.\OUT [94] is used but has no driver.
 Warning: Wire custdiveg.\OUT [93] is used but has no driver.
@@ -211,7 +195,7 @@ Warning: Wire custdiveg.\OUT [5] is used but has no driver.
 Warning: Wire custdiveg.\OUT [4] is used but has no driver.
 Warning: Wire custdiveg.\OUT [3] is used but has no driver.
 Warning: Wire custdiveg.\OUT [2] is used but has no driver.
-Found and reported 110 problems.
+Found and reported 94 problems.
 
 10. Printing statistics.
 
@@ -220,9 +204,9 @@ Found and reported 110 problems.
         +----------Local Count, excluding submodules.
         | 
         8 wires
-      307 wire bits
+      355 wire bits
         8 public wires
-      307 public wire bits
+      355 public wire bits
         3 ports
       257 port bits
         3 cells
@@ -281,9 +265,9 @@ Finding unused cells or wires in module \custdiveg..
         +----------Local Count, excluding submodules.
         | 
         8 wires
-      307 wire bits
+      355 wire bits
         8 public wires
-      307 public wire bits
+      355 public wire bits
         3 ports
       257 port bits
         3 cells
@@ -340,9 +324,9 @@ Optimizing module custdiveg.
         +----------Local Count, excluding submodules.
         | 
         8 wires
-      307 wire bits
+      355 wire bits
         8 public wires
-      307 public wire bits
+      355 public wire bits
         3 ports
       257 port bits
         3 cells
@@ -437,9 +421,9 @@ No more expansions possible.
         +----------Local Count, excluding submodules.
         | 
         8 wires
-      307 wire bits
+      355 wire bits
         8 public wires
-      307 public wire bits
+      355 public wire bits
         3 ports
       257 port bits
         3 cells
@@ -543,9 +527,9 @@ Combined 0 LUTs.
         +----------Local Count, excluding submodules.
         | 
         6 wires
-      275 wire bits
+      291 wire bits
         6 public wires
-      275 public wire bits
+      291 public wire bits
         3 ports
       257 port bits
         3 cells
@@ -564,7 +548,7 @@ Dumping module `\custdiveg'.
 
 34. Executing BLIF backend.
 
-Warnings: 110 unique messages, 110 total
-End of script. Logfile hash: f7bb2ca71d, time: 0.07s, user: 0.02s, system: 0.03s, MEM: 23.29 MB peak
+Warnings: 94 unique messages, 94 total
+End of script. Logfile hash: 84b33f85a2, time: 0.03s, user: 0.02s, system: 0.02s, MEM: 23.28 MB peak
 Yosys 0.67+42 (git sha1 6f7123d1d-dirty, Release, Clang /usr/bin/clang++ 18.1.8)
-Time spent: 38% 6x read_verilog (0 sec), 10% 7x opt_clean (0 sec), ...
+Time spent: 37% 6x read_verilog (0 sec), 11% 7x opt_clean (0 sec), ...

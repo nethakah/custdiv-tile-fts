@@ -119,9 +119,9 @@
   <tile name="custdivtile">
       <sub_tile name="custdivtile">
         
-        <input name="I0" num_pins="16" equivalent="none" />
-        <input name="I1" num_pins="16" equivalent="none" />
-        <output name="Q" num_pins="16" equivalent="none" />
+        <input name="I0" num_pins="32" equivalent="none" />
+        <input name="I1" num_pins="32" equivalent="none" />
+        <output name="Q" num_pins="32" equivalent="none" />
         <clock name="clk" num_pins="1" />
         
         <equivalent_sites>
@@ -137,8 +137,10 @@
         </fc>
         
         <pinlocations pattern="custom">
-          <loc side="right"> custdivtile.Q[7:0] custdivtile.I0[15:0] custdivtile.clk </loc> 
-          <loc side="top"> custdivtile.Q[15:8] custdivtile.I1[15:0] </loc>     
+          <loc side="right"> custdivtile.I0[31:0] custdivtile.clk </loc> 
+          <loc side="top"> custdivtile.I1[31:0] </loc>     
+          <loc side="left"> custdivtile.Q[15:0] </loc>
+          <loc side="bottom"> custdivtile.Q[31:16] </loc>
         </pinlocations>
         <!-- <pinlocations pattern="spread"/> -->
       </sub_tile>
@@ -362,9 +364,9 @@
   </pb_type>
   
   <pb_type name="custdivsite">
-        <input name="I0" num_pins="16" equivalent="none" />
-        <input name="I1" num_pins="16" equivalent="none" />
-        <output name="Q" num_pins="16" equivalent="none" />
+        <input name="I0" num_pins="32" equivalent="none" />
+        <input name="I1" num_pins="32" equivalent="none" />
+        <output name="Q" num_pins="32" equivalent="none" />
         <clock name="C" num_pins="1" />
       <mode name="CUSTDIV16">
           <pb_type name="CUSTDIV" num_pb="1" blif_model=".subckt custdiv">
@@ -374,16 +376,16 @@
                             CUSTDIV_LB.MODE_CUSTDIV[31:0] = MODE_CUSTDIV
                          </meta>
                     </metadata>
-                <input name="I0" num_pins="16"   />
-                <input name="I1" num_pins="16"   />
-                <output name="Q" num_pins="16"  />
+                <input name="I0" num_pins="32"   />
+                <input name="I1" num_pins="32"   />
+                <output name="Q" num_pins="32"  />
                 <clock name="C" num_pins="1" />
                 <delay_constant max="1500e-12" in_port="CUSTDIV.I0" out_port="CUSTDIV.Q"/>
                 <delay_constant max="1500e-12" in_port="CUSTDIV.I1" out_port="CUSTDIV.Q"/>
             </pb_type>
             <interconnect>
-                <direct name="I0"   input="custdivsite.I0[15:0]"     output="CUSTDIV.I0" />
-                <direct name="I1"   input="custdivsite.I1[15:0]"     output="CUSTDIV.I1" />
+                <direct name="I0"   input="custdivsite.I0[31:0]"     output="CUSTDIV.I0" />
+                <direct name="I1"   input="custdivsite.I1[31:0]"     output="CUSTDIV.I1" />
                 <direct name="C"    input="custdivsite.C"            output="CUSTDIV.C" />
                 <direct name="Q"    input="CUSTDIV.Q" output="custdivsite.Q" />
             </interconnect>
