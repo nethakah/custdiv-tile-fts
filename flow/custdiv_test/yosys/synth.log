@@ -565,6 +565,6 @@ Dumping module `\custdiveg'.
 34. Executing BLIF backend.
 
 Warnings: 110 unique messages, 110 total
-End of script. Logfile hash: f7bb2ca71d, time: 0.03s, user: 0.02s, system: 0.02s, MEM: 22.98 MB peak
+End of script. Logfile hash: f7bb2ca71d, time: 0.07s, user: 0.02s, system: 0.03s, MEM: 23.29 MB peak
 Yosys 0.67+42 (git sha1 6f7123d1d-dirty, Release, Clang /usr/bin/clang++ 18.1.8)
-Time spent: 38% 6x read_verilog (0 sec), 11% 7x opt_clean (0 sec), ...
+Time spent: 38% 6x read_verilog (0 sec), 10% 7x opt_clean (0 sec), ...
