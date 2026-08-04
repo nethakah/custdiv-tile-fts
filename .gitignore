@@ -8,3 +8,15 @@ verif/sim_build/
 verif/results.xml
 verif/sim
 *.vcd
+
+# VPR / Yosys build artifacts
+*.log
+*.net
+*.net.post_routing
+*.place
+*.route
+*.fasm
+*.sdf
+*_post_synthesis.*
+*.swp
+*.swo
