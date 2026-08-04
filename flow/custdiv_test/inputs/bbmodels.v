@@ -1,3 +1,4 @@
+
 module clbalu #(
     parameter MODE_ALU = 0
 )(
@@ -17,9 +18,9 @@ endmodule
 module custdiv #(
     parameter MODE_CUSTDIV = 7
 )(
-    input wire [31:0] I1,
-    input wire [31:0] I0,
+    input wire [7:0] I1,
+    input wire [7:0] I0,
     input wire C,
-    output wire [31:0] Q
+    output wire [7:0] Q
 );
 endmodule

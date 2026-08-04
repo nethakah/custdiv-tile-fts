@@ -11,7 +11,7 @@ Point                                                             Incr      Path
 --------------------------------------------------------------------------------
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
-clk.inpad[0] (.input at (4,3))                                   0.000     0.000
+clk.inpad[0] (.input at (4,1))                                   0.000     0.000
 | (intra 'insite' routing)                                       0.000     0.000
 | (inter-block routing)                                          0.000     0.000
 | (intra 'clbsite' routing)                                      0.000     0.000
@@ -19,14 +19,14 @@ R0_1.clk[0] (.latch at (3,1))                                    0.000     0.000
 | (primitive '.latch' Tcq_min)                                   0.080     0.080
 R0_1.Q[0] (.latch at (3,1)) [clock-to-output]                    0.000     0.080
 | (intra 'clbsite' routing)                                      0.000     0.080
-| (inter-block routing)                                          1.011     1.091
-| (intra 'clbsite' routing)                                      0.000     1.091
-R0.D[0] (.latch at (3,1))                                        0.000     1.091
-data arrival time                                                          1.091
+| (inter-block routing)                                          1.763     1.843
+| (intra 'clbsite' routing)                                      0.000     1.843
+R0.D[0] (.latch at (3,1))                                        0.000     1.843
+data arrival time                                                          1.843
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
-clk.inpad[0] (.input at (4,3))                                   0.000     0.000
+clk.inpad[0] (.input at (4,1))                                   0.000     0.000
 | (intra 'insite' routing)                                       0.000     0.000
 | (inter-block routing)                                          0.000     0.000
 | (intra 'clbsite' routing)                                      0.000     0.000
@@ -36,9 +36,9 @@ cell hold time                                                   0.060     0.060
 data required time                                                         0.060
 --------------------------------------------------------------------------------
 data required time                                                        -0.060
-data arrival time                                                          1.091
+data arrival time                                                          1.843
 --------------------------------------------------------------------------------
-slack (MET)                                                                1.031
+slack (MET)                                                                1.783
 
 
 #End of timing report

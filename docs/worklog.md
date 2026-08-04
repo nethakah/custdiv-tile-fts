@@ -13,6 +13,9 @@ it, and confirm a wider operator still implements through the flow.
   primitive ports, interconnect index ranges), `flow/custdiv_test/inputs/bbmodels.v`,
   `flow/custdiv_test/inputs/custdiv.v`.
 - Ran minimum-channel-width searches at both widths.
+- Wrote scripts/gen_custdiv.py: emits arch + both Verilog files from one --width argument,
+  removing hand-editing across three files. Validated by reproducing the 32-bit result exactly.
+- Swept 8 / 16 / 32 bit for minimum routable channel width.
 
 **Found.**
 TODO -- raw numbers in `flow/custdiv_test/results/sweep.md`. Cover:

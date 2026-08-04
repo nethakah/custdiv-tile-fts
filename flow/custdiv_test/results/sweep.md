@@ -12,6 +12,8 @@ Tile pin count = I0 + I1 + Q + clk.
 | 2026-08-04 | bdbb993 | 16 | 49 | -- | 50 | yes | 78382.1 | 86856.9 | 526 | 7.86072 | 127.215 | 0.76 @ (3,4) |
 | 2026-08-04 | a4db845 | 32 | 97 | 80 | -- | NO | -- | -- | -- | -- | -- | 5 overused CHANY @ x=4 |
 | 2026-08-04 | bdbb993 | 32 | 97 | -- | 100 | yes | 150056 | 86856.9 | 886 | 7.23014 | 138.31 | 0.65 @ (3,4) |
+| 2026-08-04 | (this commit) | 32 | 97 | -- | 100 | yes | 150056 | 86856.9 | 886 | 7.23014 | 138.31 | 0.65 @ (3,4) |
+| 2026-08-04 | (this commit) | 8 | 25 | -- | 28 | yes | 47618.8 | 86856.9 | 388 | 7.71014 | 129.699 | 0.89 @ (4,4) |
 
 ## How these numbers are obtained
 
@@ -36,3 +38,12 @@ Tile pin count = I0 + I1 + Q + clk.
 ## Observation
 
 TODO (NH): state the pin-count relationship, and whether the 8-bit point confirms it.
+
+Minimum channel width vs. tile pin count: 25 -> 28, 49 -> 50, 97 -> 100.
+Near-linear at 16 and 32 bit. At 8 bit it overshoots: routing failures at W=16 and
+W=24 were "no possible path" (Fc connectivity) rather than congestion, so below
+~W=28 the binding constraint is Fc (out_val=0.15), not pin count. Also at 8 bit the
+custdivtile (25 pins) is no longer the widest tile -- clbalutile is, at 60 pins.
+
+The 32-bit generated arch reproduces the hand-edited result exactly (W=100, wirelength
+886, CPD 7.23014 ns), validating scripts/gen_custdiv.py.

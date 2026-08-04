@@ -8,7 +8,8 @@ export VPR_RUN_DIR="${WORK_DIR}/vpr_pnr/"
 
 # Architecture file with a Fixed size eFPGA (4x4)
 # export ARCH_FILE="${WORK_DIR}/../../vpr_arch_files/k4_N8_sparse_xbar_4x4.xml"
-export ARCH_FILE="${WORK_DIR}/../../arch/k4_N8_custdiv.xml"
+export WIDTH="${WIDTH:-32}"
+export ARCH_FILE="${WORK_DIR}/../../arch/k4_N8_custdiv_${WIDTH}.xml"
 
 
 # Bitstream generator 
