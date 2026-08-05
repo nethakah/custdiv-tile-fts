@@ -41,3 +41,34 @@ TODO. Candidates:
   identifier, not an operand; no floating point anywhere. NYSE XDP 4-byte signed with a
   per-symbol scale code; IEX DEEP and CME MDP 3.0 both 8-byte. Needs writing into
   proposal section 3.3.
+
+**Found.**
+- There is no single "bit width" parameter. The width appears in five coupled places in the
+  arch XML plus two Verilog files, and VPR rejects the netlist if any disagree. Documented
+  in scripts/gen_custdiv.py, which now generates all three files from one --width argument.
+- 32-bit packs and places cleanly at the default channel width; routing is the wall. The
+  W=80 failure was 5 overused CHANY nodes at x=4 (the IO column), i.e. IO-to-tile bandwidth,
+  not tile pin density.
+- Minimum routable channel width = tile pins + 3, exact at 8/16/32-bit, with the next-lower
+  even width verified to fail in each case. Since pins = 3W+1, every operand bit costs three
+  tracks of channel.
+- Routing area exceeds logic area at 32-bit (150056 vs 86857). In this fabric, wires cost
+  more than logic, which is why pin count dominates the cost of operator specialisation.
+- Pin placement is worth ~4% of channel width: outputs placed on the side facing the IO
+  column route better than outputs placed away from it.
+
+**Open.**
+- fpga.sdc specifies a 0.5 ns period inherited verbatim from the upstream FTS custmul
+  example. Needs a defensible target before any timing result is reportable.
+- Scope question: current proposal frames this as hardening a divider. Given that routing
+  dominates area and minimum channel width tracks pin count, a stronger frame may be a
+  methodology for deciding which HFT operators merit tile specialisation, with fixed-point
+  division as the worked example. Advisor decision -- affects scope.
+- bbmodels.v custdiv is an empty blackbox. No divider logic exists in the flow yet.
+- Exchange field widths settled from primary specs: NASDAQ ITCH price is 4-byte unsigned,
+  spec-capped at 2e9 (31 bits); Shares 4-byte; Order Reference Number 8-byte but an
+  identifier, not an operand; no floating point anywhere. NYSE XDP 4-byte signed with a
+  per-symbol scale code; IEX DEEP and CME MDP 3.0 both 8-byte. Needs writing into
+  proposal section 3.3.
+- Not yet started: operand-width study on real market data (LOBSTER), to determine what
+  width the arithmetic actually requires.
