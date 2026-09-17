@@ -71,7 +71,6 @@ vvp sim
 
 ## Status
 
-- ✅ Prior-art survey: [docs](docs/01.md)
-- ✅ `custdiv` tile defined in the eFPGA architecture; packs, places, and routes successfully through VPR.
-- ✅ 32-bit fixed-point radix-2 restoring divider (`rtl/divider.sv`).
-- ✅ Verified against SystemVerilog `/` and `%` over directed edge cases and 1000 random vectors.
+- `custdiv` tile defined in the eFPGA architecture; packs, places, and routes successfully through VPR.
+- 32-bit fixed-point radix-2 restoring divider (`rtl/divider.sv`).
+- Verified against SystemVerilog `/` and `%` over directed edge cases and random vectors.
